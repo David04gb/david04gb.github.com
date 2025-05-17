@@ -1,0 +1,267 @@
+html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Jose Ocampo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1a3c34;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #welcome {
+            background-color: #1a3c34;
+            color: #fff;
+            text-align: center;
+            padding: 8rem 2rem;
+            margin-top: 60px;
+        }
+
+        #welcome h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        #welcome p {
+            font-size: 1.5rem;
+            color: #4CAF50;
+        }
+
+        #about {
+            background-color: #fff;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #about img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        #about p {
+            max-width: 600px;
+            font-size: 1.1rem;
+        }
+
+        #portfolio {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        #portfolio h2, #skills h2, #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #1a3c34;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        #skills {
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .skill-item {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+
+        #contact {
+            background-color: #1a3c34;
+            color: #fff;
+            text-align: center;
+        }
+
+        #contact a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1a3c34;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            #welcome h1 {
+                font-size: 2rem;
+            }
+
+            #welcome p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#welcome">Inicio</a></li>
+            <li><a href="#about">Sobre Mí</a></li>
+            <li><a href="#portfolio">Portafolio</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome">
+        <h1>Jose Ocampo</h1>
+        <p>Diseñador y Estampador</p>
+    </section>
+
+    <section id="about">
+        <img src="https://via.placeholder.com/300" alt="Foto de Jose Ocampo">
+        <div>
+            <h2>Sobre Mí</h2>
+            <p>Soy Jose Ocampo, un diseñador gráfico y estampador con más de 5 años de experiencia en la creación de diseños únicos y personalizados para guantes y textiles. Mi pasión por el diseño y la atención al detalle me permite ofrecer productos de alta calidad que cumplen con las expectativas de mis clientes. Utilizo herramientas como Adobe Creative Suite y Grok para optimizar mis procesos creativos.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portafolio</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 1">
+                <h3>Guantes Personalizados</h3>
+                <p>Diseño y estampado de guantes deportivos con patrones únicos, creados con Adobe Illustrator y optimizados con Grok.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 2">
+                <h3>Estampado Textil</h3>
+                <p>Estampado de camisetas con diseños vibrantes, utilizando técnicas de serigrafía y herramientas de diseño digital.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 3">
+                <h3>Diseño Gráfico</h3>
+                <p>Creación de logotipos y branding para pequeñas empresas, con un enfoque minimalista y profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-list">
+            <span class="skill-item">Diseño Gráfico Creativo</span>
+            <span class="skill-item">Estampado Textil de Alta Calidad</span>
+            <span class="skill-item">Organización y Personalización de Guantes</span>
+            <span class="skill-item">Adobe Illustrator</span>
+            <span class="skill-item">Adobe Photoshop</span>
+            <span class="skill-item">Grok para Optimización de Diseño</span>
+            <span class="skill-item">Serigrafía</span>
+            <span class="skill-item">Gestión de Proyectos de Diseño</span>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Correo: <a href="mailto:Josedavidocampoquintero2@gmail.com">Josedavidocampoquintero2@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/jose-david-ocampo-quintero-675b09339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Perfil de LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Jose Ocampo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
